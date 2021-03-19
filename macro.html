@@ -1,0 +1,164 @@
+DeviceInfo{buildInfo=BuildInfo{brand='samsung', model='SM-J530G', systemVersion='9', sdkVersion=28, fingerprint='samsung/j5y17lteub/j5y17lte:9/PPR1.180610.011/J530GUBS7CTC2:user/release-keys', language='pt', timezone='America/Campo_Grande', manufacturer='samsung', product='j5y17lteub', board='universal7870', device='j5y17lte', hardware='samsungexynos7870', host='SWDI3311', display='PPR1.180610.011.J530GUBS7CTC2'}, screenInfo=ScreenInfo{width=720, height=1280}, memoryInfo=MemoryInfo{ramInfo='availableSize/totalSize:526 MB/1,90 GB', internalInfo='availableSize/totalSize:3,92 GB/27,10 GB', externalInfo='availableSize/totalSize:3,90 GB/27,08 GB'}, sdCardInfo=SDCardInfo{isExist=true, totalBlocks=6610240, freeBlocks=952013, availableBlocks=952013, blockByteSize=4096, totalBytes=27075543040, freeBytes=3899445248, availableBytes=3899445248}}
+09.29_15:25:10_376 18642 2 INFO  [XGVipPushService]       Service onCreate() : com.dts.freefireth
+09.29_15:25:10_830 18642 2 INFO  [XGVipPushService]       Service onStartCommand() : com.dts.freefireth
+09.29_15:25:10_833 18642 2 INFO  [XGVipPushService]       Service onBind()
+09.29_15:25:10_934 18642 2 DEBUG [PushServiceManager]     Service's running at com.dts.freefireth,version : 1.1.5.5
+09.29_15:25:10_935 18642 2 INFO  [h]                      handleServiceInited, beforeInitedIntents size:0
+09.29_15:25:11_016 18642 458424 INFO  [DNSResolver]            DNS tcp://129.226.2.109:1883 -> tcp://129.226.2.109:1883
+09.29_15:25:11_033 18642 458425 DEBUG [ClientComms]            ConnectBG mqtt thread
+09.29_15:25:11_992 18642 2 INFO  [XGVipPushService]       Service onBind()
+09.29_15:25:11_994 18642 458417 INFO  [XGVipPushService]       onConnectComplete isReconnect:false
+09.29_15:25:15_882 18642 458417 DEBUG [h]                      Internl network connected, restart
+09.29_15:26:11_863 18642 2 INFO  [XGVipPushService]       Service onStartCommand() : com.dts.freefireth
+09.29_15:27:23_428 18642 458417 DEBUG [h]                      --start Connect UserPresentReceiver--
+09.29_15:27:24_636 18642 2 INFO  [XGVipPushService]       Service onStartCommand() : com.dts.freefireth
+09.29_15:28:06_331 18642 458417 DEBUG [h]                      --start Connect UserPresentReceiver--
+09.29_15:28:07_146 18642 2 INFO  [XGVipPushService]       Service onStartCommand() : com.dts.freefireth
+09.29_15:28:12_894 18642 458417 INFO  [XGVipPushService]       onConnectionLost
+09.29_15:28:14_773 18642 2 INFO  [Mqtt-TPush - IMqttServiceImpl] net Work is not alive, stop connect
+09.29_15:28:21_235 18642 458417 DEBUG [h]                      --start Connect UserPresentReceiver--
+09.29_15:28:21_414 18642 458430 INFO  [DNSResolver]            DNS tcp://129.226.2.109:1883 -> tcp://129.226.2.109:1883
+09.29_15:28:21_433 18642 458430 WARN  [Mqtt-TPush - IMqttServiceImpl] stopConnect error MqttException 
+09.29_15:28:21_445 18642 458431 DEBUG [ClientComms]            ConnectBG mqtt thread
+09.29_15:28:24_614 18642 458417 DEBUG [h]                      Internl network connected, restart
+09.29_15:28:31_124 18642 458417 DEBUG [h]                      --start Connect UserPresentReceiver--
+09.29_15:28:51_486 18642 458431 DEBUG [ClientComms]            ConnectBG mqtt thread
+09.29_15:29:22_522 18642 458431 ERROR [Mqtt-TPush - IMqttServiceImpl] doMqttConnect -> callback onFailure:
+09.29_15:29:22_522 18642 458431 ERROR (0) - java.net.SocketTimeoutException: failed to connect to /129.226.2.109 (port 1883) from /10.0.0.4 (port 54518) after 30000ms
+	at com.tencent.android.tpns.mqtt.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:38)
+	at com.tencent.android.tpns.mqtt.internal.ClientComms$ConnectBG.run(ClientComms.java:731)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:459)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.net.SocketTimeoutException: failed to connect to /129.226.2.109 (port 1883) from /10.0.0.4 (port 54518) after 30000ms
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:185)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+	at java.net.Socket.connect(Socket.java:621)
+	at com.tencent.android.tpns.mqtt.internal.TCPNetworkModule.start(TCPNetworkModule.java:85)
+	at com.tencent.android.tpns.mqtt.internal.ClientComms$ConnectBG.run(ClientComms.java:717)
+	... 6 more
+
+09.29_15:29:22_525 18642 458431 INFO  [GuidInfoManagerImpl]    Force expired guidInfo, let its refreshTime 0
+09.29_15:29:22_526 18642 458431 ERROR [Base-TPush - ProviderMessage] myInsert
+09.29_15:29:22_526 18642 458431 ERRORjava.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:420)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at com.tencent.bigdata.baseapi.crosssp.ProviderMessage$a.a(Unknown Source:17)
+	at com.tencent.bigdata.baseapi.crosssp.ProviderMessage.insert(Unknown Source:0)
+	at com.tencent.bigdata.baseapi.crosssp.b$a.a(Unknown Source:16)
+	at com.tencent.bigdata.baseapi.crosssp.b$a.b(Unknown Source:0)
+	at com.tencent.bigdata.baseapi.base.PushPreferences.putLong(Unknown Source:11)
+	at com.tencent.bigdata.baseapi.a.a.a.b(Unknown Source:14)
+	at com.tencent.bigdata.baseapi.base.device.GuidInfoManager.forceExpired(Unknown Source:0)
+	at com.tencent.bigdata.mqttchannel.a.c.v.onFailure(Unknown Source:42)
+	at com.tencent.android.tpns.mqtt.internal.ConnectActionListener.onFailure(ConnectActionListener.java:160)
+	at com.tencent.android.tpns.mqtt.internal.CommsCallback.fireActionEvent(CommsCallback.java:330)
+	at com.tencent.android.tpns.mqtt.internal.CommsCallback.handleActionComplete(CommsCallback.java:263)
+	at com.tencent.android.tpns.mqtt.internal.CommsCallback.asyncOperationComplete(CommsCallback.java:449)
+	at com.tencent.android.tpns.mqtt.internal.ClientComms.shutdownConnection(ClientComms.java:431)
+	at com.tencent.android.tpns.mqtt.internal.ClientComms$ConnectBG.run(ClientComms.java:735)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:459)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+
+09.29_15:29:22_527 18642 458431 WARN  [Mqtt-TPush - IMqttServiceImpl] Set guid to expired
+09.29_15:29:26_566 18642 458434 INFO  [Mqtt-TPush - IMqttServiceImpl] Guid expired, request for new one.
+09.29_15:29:26_591 18642 458434 INFO  [GuidInfoManagerImpl]    Send request to GuidServer: {"accessId":1520010115,"accessKey":"AJK5B8V54XFU","deviceType":0,"sdkVersion":"1.1.5.5","seq":1601407766579,"token":"06c4c1719b35a695dfc1cd0aaa70ac60f986","tokenList":["06c4c1719b35a695dfc1cd0aaa70ac60f986"],"protocolVersion":1}
+09.29_15:29:36_627 18642 458434 ERROR [Base-TPush - HttpRequest] Http Request Error, Tr:
+09.29_15:29:36_627 18642 458434 ERRORjava.net.UnknownHostException: Unable to resolve host "api.tpns.sgp.tencent.com": No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:157)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:105)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1154)
+	at com.android.okhttp.Dns$1.lookup(Dns.java:39)
+	at com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:197)
+	at com.android.okhttp.internal.http.RouteSelector.nextProxy(RouteSelector.java:145)
+	at com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:90)
+	at com.android.okhttp.internal.http.StreamAllocation.findConnection(StreamAllocation.java:190)
+	at com.android.okhttp.internal.http.StreamAllocation.findHealthyConnection(StreamAllocation.java:142)
+	at com.android.okhttp.internal.http.StreamAllocation.newStream(StreamAllocation.java:104)
+	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:392)
+	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:325)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:488)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:131)
+	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getOutputStream(HttpURLConnectionImpl.java:262)
+	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getOutputStream(DelegatingHttpsURLConnection.java:218)
+	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:26)
+	at com.tencent.bigdata.baseapi.core.net.a.a(Unknown Source:139)
+	at com.tencent.bigdata.baseapi.a.a.a.a(Unknown Source:234)
+	at com.tencent.bigdata.baseapi.base.device.GuidInfoManager.refreshConnectInfoSynchronized(Unknown Source:3)
+	at com.tencent.bigdata.mqttchannel.a.c.u$c.a(Unknown Source:61)
+	at com.tencent.bigdata.mqttchannel.a.c.u$c.run(Unknown Source:166)
+Caused by: android.system.GaiException: android_getaddrinfo failed: EAI_NODATA (No address associated with hostname)
+	at libcore.io.Linux.android_getaddrinfo(Native Method)
+	at libcore.io.BlockGuardOs.android_getaddrinfo(BlockGuardOs.java:172)
+	at java.net.Inet6AddressImpl.lookupHostByName(Inet6AddressImpl.java:137)
+	... 21 more
+
+09.29_15:29:36_786 18642 458434 WARN  [Mqtt-TPush - IMqttServiceImpl] stopConnect error MqttException 
+09.29_15:29:36_792 18642 458435 DEBUG [ClientComms]            ConnectBG mqtt thread
+09.29_15:29:37_340 18642 458435 DEBUG [ClientComms]            ConnectBG mqtt thread
+09.29_15:29:38_345 18642 458435 ERROR [Mqtt-TPush - IMqttServiceImpl] doMqttConnect -> callback onFailure:
+09.29_15:29:38_345 18642 458435 ERROR (32103) - java.net.ConnectException: failed to connect to /129.226.2.109 (port 1883) from /:: (port 0) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at com.tencent.android.tpns.mqtt.internal.TCPNetworkModule.start(TCPNetworkModule.java:95)
+	at com.tencent.android.tpns.mqtt.internal.ClientComms$ConnectBG.run(ClientComms.java:717)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:459)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+Caused by: java.net.ConnectException: failed to connect to /129.226.2.109 (port 1883) from /:: (port 0) after 30000ms: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.IoBridge.connect(IoBridge.java:137)
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:137)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+	at java.net.Socket.connect(Socket.java:621)
+	at com.tencent.android.tpns.mqtt.internal.TCPNetworkModule.start(TCPNetworkModule.java:85)
+	... 7 more
+Caused by: android.system.ErrnoException: connect failed: ENETUNREACH (Network is unreachable)
+	at libcore.io.Linux.connect(Native Method)
+	at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:118)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:168)
+	at libcore.io.IoBridge.connect(IoBridge.java:129)
+	... 14 more
+
+09.29_15:29:38_346 18642 458435 INFO  [GuidInfoManagerImpl]    Force expired guidInfo, let its refreshTime 0
+09.29_15:29:38_347 18642 458435 ERROR [Base-TPush - ProviderMessage] myInsert
+09.29_15:29:38_347 18642 458435 ERRORjava.lang.InterruptedException
+	at java.util.concurrent.FutureTask.awaitDone(FutureTask.java:420)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at com.tencent.bigdata.baseapi.crosssp.ProviderMessage$a.a(Unknown Source:17)
+	at com.tencent.bigdata.baseapi.crosssp.ProviderMessage.insert(Unknown Source:0)
+	at com.tencent.bigdata.baseapi.crosssp.b$a.a(Unknown Source:16)
+	at com.tencent.bigdata.baseapi.crosssp.b$a.b(Unknown Source:0)
+	at com.tencent.bigdata.baseapi.base.PushPreferences.putLong(Unknown Source:11)
+	at com.tencent.bigdata.baseapi.a.a.a.b(Unknown Source:14)
+	at com.tencent.bigdata.baseapi.base.device.GuidInfoManager.forceExpired(Unknown Source:0)
+	at com.tencent.bigdata.mqttchannel.a.c.v.onFailure(Unknown Source:42)
+	at com.tencent.android.tpns.mqtt.internal.ConnectActionListener.onFailure(ConnectActionListener.java:160)
+	at com.tencent.android.tpns.mqtt.internal.CommsCallback.fireActionEvent(CommsCallback.java:330)
+	at com.tencent.android.tpns.mqtt.internal.CommsCallback.handleActionComplete(CommsCallback.java:263)
+	at com.tencent.android.tpns.mqtt.internal.CommsCallback.asyncOperationComplete(CommsCallback.java:449)
+	at com.tencent.android.tpns.mqtt.internal.ClientComms.shutdownConnection(ClientComms.java:431)
+	at com.tencent.android.tpns.mqtt.internal.ClientComms$ConnectBG.run(ClientComms.java:735)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:459)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.lang.Thread.run(Thread.java:764)
+
+09.29_15:29:38_348 18642 458435 WARN  [Mqtt-TPush - IMqttServiceImpl] Set guid to expired
